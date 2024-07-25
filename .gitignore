@@ -1,0 +1,70 @@
+# Carpeta binaria generada al compilar
+bin/
+obj/
+
+# Archivos de caché y logs
+*.user
+*.vscode
+*.suo
+*.cache
+*.log
+
+# Archivos de compilación
+*.dll
+*.exe
+*.pdb
+*.log
+*.svclog
+*.ipch
+*.coverage
+*.pfx
+
+# Directorio de NuGet
+packages/
+
+# Archivos de Visual Studio
+.vscode/
+.vs/
+*.sln.docstates
+
+# Archivos de proyecto específicos
+*_i.c
+*_p.c
+*.ilk
+*.meta
+*.obj
+*.pch
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.tmp_proj
+*.log
+*.user
+*.VC.db
+*.VC.opendb
+*.VC.VC.opendb
+
+# Archivos generados por Rider IDE
+.idea/
+*.sln.iml
+
+# Archivos de análisis de código
+*.sln.docstates
+
+# Dependencias de proyectos y otros archivos generados
+_ReSharper*/
+*.resharper
+[Tt]est[Rr]esult*/
+*.dbmdl
+*.jfm
+*.bak
+*.mdb
+
+# Rider-specific files
+.idea/
+*.sln.iml
