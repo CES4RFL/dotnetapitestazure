@@ -7,6 +7,12 @@ namespace ApiBooks.Controllers
     [ApiController]
     public class BooksController : ControllerBase
     {
+        private readonly ILogger _logger;
+
+        public BooksController(ILogger<BooksController> logger)
+        {
+            _logger = logger;
+        }
         private static List<Book> _books = new List<Book>
         {
             new Book { Id = 1, Title = "Book 1", Author = "Author 1", Year = 2020 },
@@ -15,7 +21,7 @@ namespace ApiBooks.Controllers
 
         [HttpGet]
         public ActionResult<IEnumerable<Book>> Get()
-        {
+        {   _logger.LogInformation("Este es mi mensaje en el logs {}", DateTime.UtcNow.ToLongTimeString());
             return _books;
         }
 
